@@ -14,7 +14,7 @@ img {
 
 .box {
     border: 2px solid #ccc;
-    border-radius: 16px;
+    border-radius: 8px;
     /* box-sizing: inherit;   */
 }
 
