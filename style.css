@@ -7,8 +7,14 @@ img {
     height: 300px;
 }
 
+.container {
+    display:flex;
+    justify-content: center;
+}
+
 .box {
     border: 2px solid #ccc;
     border-radius: 16px;
-    box-sizing: inherit;
+    /* box-sizing: inherit;   */
 }
+
