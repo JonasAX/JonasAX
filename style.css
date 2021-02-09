@@ -1,7 +1,15 @@
-body {
+html, body {
     text-align: center;
     font-family: sans-serif;
     background-image: url('assets/noise.png');
+    margin: 0;
+    height: 100%;
+}
+
+.flex-container {
     display: flex;
+    justify-content: center;
+    flex-flow: column;
     align-items: center;
+    align-content: space-around;
 }
