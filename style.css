@@ -39,3 +39,7 @@ html, body {
 .space {
     /* add some space from previous paragraph */
 }
+
+h1 {
+    text-transform: uppercase;
+}
