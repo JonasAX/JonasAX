@@ -40,6 +40,14 @@ html, body {
     /* add some space from previous paragraph */
 }
 
+@font-face {
+    font-family: 'Julius Sans One';
+    src: url(assets/JuliusSansOne-Regular.ttf);
+}
+
 h1 {
     text-transform: uppercase;
+    font-family: 'Julius Sans One';
+    font-weight: 100;
 }
+
