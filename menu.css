@@ -4,6 +4,8 @@
     outline: none;
 }
 
+/* Needs some deletions and patches */
+
 nav {
     width: auto;
     float: right;
