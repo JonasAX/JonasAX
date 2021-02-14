@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="menu.css">
   <link rel="stylesheet" href="style.css">
   <title>Jonas</title>
@@ -14,25 +15,22 @@
 <body>
   <!-- add a bunker menu -->
   <!-- Add a toggle menu here -->
-  <input type='checkbox' id='menu'>
-  <label class='menu' for='menu'>
-
-    <div class='barry'>
-      <span class='bar'></span>
-      <span class='bar'></span>
-      <span class='bar'></span>
-      <span class='bar'></span>
+    <div class="share">
+      <ul>
+        <li><a href=""><i class="fa fa-search" aria-hidden="true"></i> <span>Cek Paket</span></a></li>
+        <li><a href=""><i class="fa fa-money" aria-hidden="true"></i> <span>Cek Tarif</span></a></li>
+        <li><a href=""><i class="fa fa-map-o" aria-hidden="true"></i> <span>Cabang SAP Express</span></a></li>
+      </ul>
+      <div class="toggle"></div>
     </div>
-
-    <ul>
-      <li><a id='home' href='#home'>Home</a></li>
-      <li><a id='about' href='#about'>About</a></li>
-      <li><a id='contact' href='#contact'>Contact</a></li>
-      <li><a id='link' href='#link'>Other</a></li>
-    </ul>
-
-  </label>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.toggle').click(function(){
+          $('.share').toggleClass('active');
+        })
+      })
+    </script>
 
   <section class="flex-container">
     <!-- Add moving shadow -->

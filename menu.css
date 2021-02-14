@@ -1,70 +1,132 @@
-#menu {
-    display: none;
+.share
+{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 0.5s;
 }
 
-#menu:checked~.menu {
-    width: 500px;
-    border-radius: 5px;
-    background-color: transparent;
-    height: 85px;
+.share.active
+{
+  width: 300px;
+  height: 170px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  left: 20%;
+  bottom: -5%;
 }
 
-#menu:checked~.menu>ul {
-    display: block;
-    opacity: 1;
+.share.active .toggle
+{
+  position: fixed;
+  bottom: -25px;
+  left: 0px;
 }
 
-#menu:checked~.menu>.barry {
-    display: none;
+.share .toggle
+{
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background: #ff0057;
+  border-radius: 50%;
+  transition: 0.5s;
 }
 
-.menu {
-    display: block;
-    margin: 30px auto;
-    width: 100px;
-    height: 100px;
-    border: 3px solid transparent;
-    border-radius: 50%;
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+.share .toggle:before
+{
+  content: '\f0c9';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-family: fontAwesome;
+  color: #fff;
+  font-size: 24px;
 }
 
-.menu div.barry {
-    width: 40px;
-    margin: 35px auto;
+.share.active .toggle:before
+{
+  content: '\f00d';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  font-family: fontAwesome;
+  color: #fff;
+  font-size: 24px;
 }
 
-.menu div.barry .bar {
-    display: block;
-    width: 100%;
-    height: 5px;
-    margin-top: 3px;
-    border-radius: 2px;
-    background-color: #fff;
+ul
+{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  transform: scale(0);
 }
 
-.menu ul {
-    opacity: 0;
-    display: none;
-    transition: all 0.5s ease-in-out;
-    list-style-type: none;
-    padding: 0;
-    width: 500px;
-    text-align: center;
-    margin-bottom: 0;
+.share.active ul
+{
+  transform: scale(1);
+  transition: .5s;
+  transition-delay: .2s;
 }
 
-.menu ul li {
-    display: inline-block;
+ul li
+{
+  list-style: none;
 }
 
-.menu ul li a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
-    border: 3px solid transparent;
-    border-radius: 5px;
+ul li a
+{
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #262626;
+  transition: .5s;
+}
+
+ul li a:hover
+{
+  color: #fff;
+  background: #262626;
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+  border-radius: 4px;
+}
+
+ul li a .fa
+{
+  width: 25px;
+  height: 25px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+ul li a .fa
+{
+  background: #92275f;
+}
+
+ul li a:hover
+{
+  background: #f36f21;
 }
