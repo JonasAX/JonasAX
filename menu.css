@@ -1,18 +1,18 @@
 }
-#mmeennuu {
+#menu {
     display: none;
 }
-#mmeennuu:checked ~ .menu {
+#menu:checked ~ .menu {
     width: 500px;
     border-radius: 5px;
     background-color: transparent;
     height: 85px;
 }
-#mmeennuu:checked ~ .menu > ul {
+#menu:checked ~ .menu > ul {
     display: block;
     opacity: 1;
 }
-#mmeennuu:checked ~ .menu > .barry {
+#menu:checked ~ .menu > .barry {
     display: none;
 }
 .menu {
