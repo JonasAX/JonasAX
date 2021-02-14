@@ -1,20 +1,23 @@
-}
 #menu {
     display: none;
 }
-#menu:checked ~ .menu {
+
+#menu:checked~.menu {
     width: 500px;
     border-radius: 5px;
     background-color: transparent;
     height: 85px;
 }
-#menu:checked ~ .menu > ul {
+
+#menu:checked~.menu>ul {
     display: block;
     opacity: 1;
 }
-#menu:checked ~ .menu > .barry {
+
+#menu:checked~.menu>.barry {
     display: none;
 }
+
 .menu {
     display: block;
     margin: 30px auto;
@@ -26,10 +29,12 @@
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
+
 .menu div.barry {
     width: 40px;
     margin: 35px auto;
 }
+
 .menu div.barry .bar {
     display: block;
     width: 100%;
@@ -38,6 +43,7 @@
     border-radius: 2px;
     background-color: #fff;
 }
+
 .menu ul {
     opacity: 0;
     display: none;
@@ -48,9 +54,11 @@
     text-align: center;
     margin-bottom: 0;
 }
+
 .menu ul li {
     display: inline-block;
 }
+
 .menu ul li a {
     text-decoration: none;
     display: inline-block;
@@ -59,4 +67,4 @@
     transition: all 0.3s ease-in-out;
     border: 3px solid transparent;
     border-radius: 5px;
-    }
+}
